@@ -1,0 +1,55 @@
+{
+  "kind": "collectionType",
+  "collectionName": "real_estates",
+  "info": {
+    "singularName": "real-estate",
+    "pluralName": "real-estates",
+    "displayName": "Real estate",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "rent": {
+      "type": "integer"
+    },
+    "Number_of_room": {
+      "type": "integer"
+    },
+    "Area": {
+      "type": "decimal"
+    },
+    "City": {
+      "type": "string"
+    },
+    "Neighborhood": {
+      "type": "string"
+    },
+    "Property_pictures": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "Title": {
+      "type": "text"
+    },
+    "Property_head_picture": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}
